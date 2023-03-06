@@ -8,6 +8,13 @@
   !(package-dune-stanzas)
   )
 
+; Use `static-clibs` to specify static C libs (without lib prefix)
+; and `static-macos-clibs` and `static-alpine-clibs` for system specific deps
+(rule
+  (targets linking.sexp)
+  (action  (with-stdout-to %{targets}
+    (run ./linking_flags.sh linking.sexp %{env:LINKING_MODE=dynamic} %{ocaml-config:system}  !(static-clibs)))))
+
 !{package-dune-files}
 (documentation
   (package !{package-name}))
