@@ -1,5 +1,5 @@
 [project]
-drom-version = "0.1.0"
+# drom-version = "0.1.0"
 
 [project]
 authors = [!{authors-for-toml}]
@@ -46,4 +46,3 @@ for-test = true
 [project]
 pack-modules = true
 skip-dirs = []
-
