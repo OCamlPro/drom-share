@@ -1,5 +1,5 @@
 [project]
-drom-version = "0.1.0"
+drom-version = "0.9.3"
 
 [project]
 authors = [!{authors-for-toml}]
@@ -34,8 +34,8 @@ skip = ""
 
 [dependencies]
 
-[tools.ocamlformat]
-for-test = true
+#[tools.ocamlformat]
+#for-test = true
 [tools.odoc]
 for-doc = true
 [tools.ppx_expect]
