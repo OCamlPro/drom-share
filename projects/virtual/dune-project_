@@ -3,9 +3,12 @@
 !(dune-project-header)
 !{dune-cram}
 (name !{name})
-(allow_approximate_merlin)
 (generate_opam_files false)
 (version !{version})
 (formatting (enabled_for ocaml reason))
 !{dune-packages}
 !(dune-project-trailer)
+
+; add this in dune-project-trailer if you need it, as it is not used
+; by the most recent versions of dune
+;(allow_approximate_merlin)
